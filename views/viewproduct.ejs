@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <%- include('./partials/head') %>
+    <title>Add Products</title>
+</head>
+<body>
+    <%- include('./partials/nav') %>
+    <div class="container mt-3">
+        <h1> <%= product.code %></h1>
+        <img src=" <%= product.productImageURL %>" width="500px" />
+       <pre ><%= product.name %></pre> 
+    </div>
+    <div class="container">
+     <img src="<%= product.createdBy.profileImageURL %>" width="50px"/> <%= product.createdBy.fullName %>
+    </div>
+    <%- include('./partials/scripts') %>
+</body>
+</html>
+
